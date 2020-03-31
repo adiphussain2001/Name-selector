@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+
+  <head> <!-- Nu öppnar jag head-->
+
+
+  <title> Name-Selector  </title>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="views\css\Nameselector.css"> <!-- Nu länkar jag min CSS fil  -->
+
+<script src="./namn.js">
+</script> <!-- Nu länkar jag min js fil -->
+
+</head> <!-- Nu stänger jag head -->
+
+
+      <body> <!-- Nu öppnar jag body-->
+
+<div class="babybildIndex"> <!--Nu skapar jag mina sponsor bilders div -->
+  <!--Nu hänvisar jag min bilder genom att länka den, samt stylar dem -->
+  <img src="C:\Users\adip.hussain\Desktop\webbutveckling\Nameselector\views\img\output-onlinepngtools.png" style="float:right;width:150px;height:400px;margin-top: 10%; margin-right:5%;" alt="8up dricka">
+  <img src="C:\Users\adip.hussain\Desktop\webbutveckling\Nameselector\views\img\output-onlinepngtools (1).png " style="float:left;width:200px;height:400px;margin-top: 10%; margin-right:5%;" alt="8up dricka">
+</div>
+      <div class="col-sm border border-dark bg-danger rounded-lg"> <!-- Nu gör jag col och styler den med en border, borderlinje och färg genom bootstrap  -->
+
+         <div class="title text-center border border-dark"> <!-- nu centrerar jag texten och skapar en border med färgen svart-->
+          <h1> Name-Selector </h1>
+         </div>
+
+         <div class="h1 text-center border border-primary "> <!--Nu stylar jag min text och skapar en column, genom bootstrap metoder -->
+          <p class="lead">Tryck på några av de blå knapparna för att slumpa fram ett namn</p> <!--Nu stylar jag texten inuti diven -->
+         </div>
+
+      </div>
+
+      <div class="container border border-dark bg-danger rounded-lg h-100%"> <!-- Nu skapar jag min underlag "table" för mina knapp divar -->
+
+        <div class="row"> <!--Nu använder jag mig utav row metoden för att skapa mina divar i samma rad-->
+
+          <div class="ruta1 col-sm border border-white bg-info "> <!--Nu skapar jag min ruta och stylar den för denna språk -->
+          <p> Arabiska </p>
+          <p class="font-weight-bold d-inline"> Al Arabiya </p>
+          <button onclick="arabiskNamn()" type="button" class="btn btn-primary d-inline" name="button"> Slumpa</button> <!--Nu skapar jag min knapp, stylar den och hämtar mina js functioner genom onclick -->
+        </div>
+
+
+          <div class="ruta1 col-sm border border-white bg-info "> <!--Nu skapar jag min ruta och stylar den för denna språk -->
+          <p> Franska </p>
+          <p class="font-weight-bold d-inline"> Français </p>
+          <button onclick="franskaNamn()" type="button" class="btn btn-primary d-inline" name="button"> Slumpa </button><!--Nu skapar jag min knapp, stylar den och hämtar mina js functioner genom onclick -->
+          </div>
+
+          <div class="ruta1 col-sm border border-white bg-info "> <!--Nu skapar jag min ruta och stylar den för denna språk -->
+          <p> Mediterriansk </p>
+          <p class="font-weight-bold d-inline"> Medətəˈrānēən </p>
+          <button onclick="mediterrianskNamn()" type="button" class="btn btn-primary d-inline" name="button"> Slumpa </button><!--Nu skapar jag min knapp, stylar den och hämtar mina js functioner genom onclick -->
+          </div>
+
+       </div>
+
+       <div class="row"><!--Nu använder jag mig utav row metoden för att skapa mina divar i samma rad-->
+
+         <div class="ruta1 col-sm border border-white bg-info "> <!--Nu skapar jag min ruta och stylar den för denna språk -->
+         <p> Hindi </p>
+         <p class="font-weight-bold d-inline"> (हिन्दी </p>
+         <button onclick="hindiNamn()" type="button" class="btn btn-primary d-inline" name="button"> Slumpa </button> <!--Nu skapar jag min knapp, stylar den och hämtar mina js functioner genom onclick -->
+         </div>
+
+         <div class="ruta1 col-sm border border-white bg-info "> <!--Nu skapar jag min ruta och stylar den för denna språk -->
+         <p> Afrikaans </p>
+         <p class="font-weight-bold d-inline"> ɐfriˈkɑːns </p>
+         <button onclick="afrikaansNamn()" type="button" class="btn btn-primary d-inline" name="button"> Slumpa </button> <!--Nu skapar jag min knapp, stylar den och hämtar mina js functioner genom onclick -->
+         </div>
+
+         <div class="ruta1 col-sm border border-white bg-info "> <!--Nu skapar jag min ruta och stylar den för denna språk -->
+         <p> Indianspråk </p>
+         <p class="font-weight-bold d-inline"> Indianspråk </p>
+         <button onclick="indianNamn()" type="button" class="btn btn-primary d-inline" name="button"> Slumpa </button> <!--Nu skapar jag min knapp, stylar den och hämtar mina js functioner genom onclick -->
+         </div>
+       </div>
+
+       <div class="row"><!--Nu använder jag mig utav row metoden för att skapa mina divar i samma rad-->
+
+         <div class="ruta1 col-sm border border-white bg-info "> <!--Nu skapar jag min ruta och stylar den för denna språk -->
+         <p> Svenska </p>
+         <p class="font-weight-bold d-inline"> Svenska </p>
+         <button onclick="svenskaNamn()" type="button" class="btn btn-primary d-inline" name="button"> Slumpa </button> <!--Nu skapar jag min knapp, stylar den och hämtar mina js functioner genom onclick -->
+         </div>
+
+         <div class="ruta1 col-sm border border-white bg-info "> <!--Nu skapar jag min ruta och stylar den för denna språk -->
+         <p> Engelska </p>
+         <p class="font-weight-bold d-inline"> Engelska </p>
+         <button onclick="engelskaNamn()" type="button" class="btn btn-primary d-inline" name="button"> Slumpa </button> <!--Nu skapar jag min knapp, stylar den och hämtar mina js functioner genom onclick -->
+         </div>
+
+         <div class="ruta1 col-sm border border-white bg-info "> <!--Nu skapar jag min ruta och stylar den för denna språk -->
+           <p> Kinesiska </p>
+         <p class="font-weight-bold d-inline">Kinesiska </p>
+         <button onclick="kinesiskaNamn()" type="button" class="btn btn-primary d-inline" name="button"> Slumpa </button> <!--Nu skapar jag min knapp, stylar den och hämtar mina js functioner genom onclick -->
+         </div>
+
+       </div> 
+
+      </div>
+
+       <div class="navbar navbar-inverse bg-dark"> <!-- Nu skapar jag min navmeny -->
+
+       <a href="index.html" class="active">Hemma</a>  <!-- Nu skapar jag min länkar till andra sidorna -->
+       <a href="Kontakt.html">Kontakt</a>    <!-- Nu skapar jag min länkar till andra sidorna -->
+
+       </div>
+
+     </body> <!--Nu stänger jag body-->
+
+
+</html>
